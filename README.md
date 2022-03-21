@@ -1,10 +1,10 @@
 
 # LAB 01: Node Ecosystem, CI, CD
 
-Repo: https://github.com/Zavvy-Glitch/server-deployment-practice
-Actions: https://github.com/Zavvy-Glitch/server-deployment-practice/actions
-Pull Requests: https://github.com/Zavvy-Glitch/server-deployment-practice/pull/3
-Deployment: https://chattray-server-deploy-prod.herokuapp.com/
+- Repo: https://github.com/Zavvy-Glitch/server-deployment-practice
+- Actions: https://github.com/Zavvy-Glitch/server-deployment-practice/actions
+- Pull Requests: https://github.com/Zavvy-Glitch/server-deployment-practice/pull/3
+- Deployment: https://chattray-server-deploy-prod.herokuapp.com/
 
 ### Usage
  - Note: If planning on forking and using on your local machine, please be sure to install express, jest, and supertest. These will be required in order for the application to run.
