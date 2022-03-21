@@ -1,31 +1,14 @@
 'use strict';
 
-const app = require('../app.js');
 const supertest = require('supertest');
-const { expect, it } = require('@jest/globals');
+const app = require('../server/app.js');
+const request = supertest(app);
 
-const request  = supertest(app);
+//takes callbacks within the first set of parenthesis
+describe('Testing HTTP API', () => {
+    it('Respond to GET request to /hello route with a status 200', async () => {
+        const response = await request.get('/hello');
 
-describe('Testing my Express Server', () => {
-
-  it('Should response with a string on POST /talk', async () => {
-
-    let param = 'Iamsomewords';''
-   
-    let response = await request.post('/talk').send({
-      words: param,
+        expect(response.status).toEqual(200);
     });
-
-    expect(response.status).toBe(200);
-    expect(typeof(response.text)).toBe('string');
-    expect(response.text).toBe(param);
-  });
-
-  it('Should respond with a string on GET /repeat', async () => {
-
-    let response = await request.get('/repeat');
-
-    expect(response.status).toBe(200);
-    expect(typeof response.text).toBe('string');
-  });
-});
+})
