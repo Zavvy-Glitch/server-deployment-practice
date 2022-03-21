@@ -9,4 +9,4 @@
 ### Usage
  - Note: If planning on forking and using on your local machine, please be sure to install express, jest, and supertest. These will be required in order for the application to run.
  - There is currently only one singularly supplied pathway. (GET route of '/hello')
- - This route may be tested on Heroku at the deployment link posted above for deployment just make sure to add hello afterthe backslash! You should get a return of HELLO!!!!!!!
+ - This route may be tested on Heroku at the deployment link posted above for deployment just make sure to add hello after the backslash! You should get a return of HELLO!!!!!!!
